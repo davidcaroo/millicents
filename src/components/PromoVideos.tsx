@@ -33,7 +33,7 @@ export const PromoVideos = () => {
               className="relative group cursor-pointer overflow-hidden rounded-lg"
             >
 
-              <video className="h-full w-full rounded-lg" autoPlay>
+              <video className="h-full w-full rounded-lg" controls autoPlay>
                 <source src={video.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
