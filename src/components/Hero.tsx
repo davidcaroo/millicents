@@ -14,7 +14,7 @@ export const Hero = () => {
           className="w-full h-full object-cover opacity-50"
         />
       </div>
-      <div className="relative h-full flex items-center">
+      <div className="relative pt-36 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
