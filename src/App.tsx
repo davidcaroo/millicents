@@ -14,6 +14,10 @@ import { AboutPage } from './pages/AboutPage';
 import type { Product, CartItem } from './types';
 import './i18n';
 
+// Import Images
+import Producto1 from './media/images/Premiun-foundation.webp';
+import Producto2 from './media/images/Skin-serum.webp';
+
 const SAMPLE_PRODUCTS: Product[] = [
   {
     id: '1',
@@ -28,7 +32,7 @@ const SAMPLE_PRODUCTS: Product[] = [
     name: 'Premium Foundation',
     description: 'Lightweight, full-coverage foundation',
     price: 39.99,
-    image: 'https://images.unsplash.com/photo-1590156206657-aec9b2c46071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: Producto1,
     category: 'face'
   },
   {
@@ -36,7 +40,7 @@ const SAMPLE_PRODUCTS: Product[] = [
     name: 'Eye Shadow Palette',
     description: 'Professional-grade eyeshadow palette',
     price: 49.99,
-    image: 'https://images.unsplash.com/photo-1583241749708-a482c1aeea1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: Producto2,
     category: 'eyes'
   }
 ];

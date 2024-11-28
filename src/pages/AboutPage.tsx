@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Heart, Shield, Leaf } from 'lucide-react';
 
+//images
+import Boutique from '../media/images/boutique.jpg'
+import Boutique2 from '../media/images/boutique2.jpg'
+
 export const AboutPage = () => {
   const { t } = useTranslation();
 
@@ -67,14 +71,14 @@ export const AboutPage = () => {
           {/* gallery photos store */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img
-              src="../media/images/boutique2.jpg"
-              alt="Store Interior"
-              className="w-full h-64 object-cover rounded-lg"
+              src={Boutique}
+              alt="boutique 1"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
             <img
-              src="./media/images/boutique.jpg"
-              alt="Store Interior"
-              className="w-full h-64 object-cover rounded-lg"
+              src={Boutique2}
+              alt="boutique 2"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
             />  
           </div>
         </motion.div>

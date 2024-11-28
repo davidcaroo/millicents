@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+
+//Images
 import Portada from '../media/images/portada.jpg';
 
 export const Hero = () => {
