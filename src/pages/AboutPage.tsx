@@ -63,6 +63,20 @@ export const AboutPage = () => {
               </div>
             </div>
           </div>
+
+          {/* gallery photos store */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img
+              src="../media/images/boutique2.jpg"
+              alt="Store Interior"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+            <img
+              src="./media/images/boutique.jpg"
+              alt="Store Interior"
+              className="w-full h-64 object-cover rounded-lg"
+            />  
+          </div>
         </motion.div>
       </div>
     </div>
