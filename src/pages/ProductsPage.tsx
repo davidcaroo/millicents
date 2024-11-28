@@ -3,11 +3,18 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ProductGrid } from '../components/ProductGrid';
 import type { Product } from '../types';
-
+import handleAddToCart from '../App';
 
 // Images
 
 import Lipstick from '../media/images/labia.jpg';
+import ShadowPalete from '../media/images/eye-shadow.webp';
+import PremiumFundation from '../media/images/Premiun-foundation.webp';
+import SkinSerenum from '../media/images/Skin-serum.webp';
+import Facial from '../media/images/Facial.webp';
+import Moisirer from '../media/images/Facial Moisturizer.jpg';
+
+
 
 const PRODUCTS: Product[] = [
   {
@@ -23,7 +30,7 @@ const PRODUCTS: Product[] = [
     name: 'Premium Foundation',
     description: 'Lightweight, full-coverage foundation',
     price: 39.99,
-    image: 'https://images.unsplash.com/photo-1590156206657-aec9b2c46071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: PremiumFundation,
     category: 'face'
   },
   {
@@ -31,7 +38,7 @@ const PRODUCTS: Product[] = [
     name: 'Eye Shadow Palette',
     description: 'Professional-grade eyeshadow palette',
     price: 49.99,
-    image: 'https://images.unsplash.com/photo-1583241749708-a482c1aeea1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: ShadowPalete,
     category: 'eyes'
   },
   {
@@ -39,7 +46,7 @@ const PRODUCTS: Product[] = [
     name: 'Mascara Volume Plus',
     description: 'Volumizing and lengthening mascara',
     price: 29.99,
-    image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: Facial,
     category: 'eyes'
   },
   {
@@ -47,7 +54,7 @@ const PRODUCTS: Product[] = [
     name: 'Skin Serum',
     description: 'Hydrating and rejuvenating serum',
     price: 59.99,
-    image: 'https://images.unsplash.com/photo-1570194065650-d99fb4a8ae66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: SkinSerenum,
     category: 'skincare'
   },
   {
@@ -55,7 +62,7 @@ const PRODUCTS: Product[] = [
     name: 'Facial Moisturizer',
     description: 'Daily hydrating moisturizer',
     price: 34.99,
-    image: 'https://images.unsplash.com/photo-1556229164-5f679977d53d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: Moisirer,
     category: 'skincare'
   }
 ];
@@ -81,7 +88,7 @@ export const ProductsPage = () => {
               className="w-full max-w-md mx-auto block px-4 py-2 rounded-full border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/20"
             />
           </div>
-          <ProductGrid products={PRODUCTS} onAddToCart={() => {}} />
+          <ProductGrid products={PRODUCTS} onAddToCart={handleAddToCart} />
         </motion.div>
       </div>
     </div>
