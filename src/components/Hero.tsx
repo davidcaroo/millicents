@@ -1,20 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import Portada from '../media/images/portada.jpg';
 
 export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] bg-background">
+    <div className="relative min-h-[67vh] sm:min-h-[70vh] lg:min-h-[80vh] bg-background">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+          //src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+          src={Portada}
           alt="Beauty Products"
           className="w-full h-full object-cover opacity-50"
+          //style={{ objectPosition: 'top center' }} // Muestra la parte superior
         />
       </div>
-      <div className="relative pt-36 h-full flex items-center">
+      <div className="relative pt-20 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

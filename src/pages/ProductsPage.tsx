@@ -4,13 +4,18 @@ import { useTranslation } from 'react-i18next';
 import { ProductGrid } from '../components/ProductGrid';
 import type { Product } from '../types';
 
+
+// Images
+
+import Lipstick from '../media/images/labia.jpg';
+
 const PRODUCTS: Product[] = [
   {
     id: '1',
     name: 'Luxury Lipstick',
     description: 'Long-lasting, moisturizing lipstick',
     price: 24.99,
-    image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    image: Lipstick,
     category: 'lips'
   },
   {
