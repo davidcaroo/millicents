@@ -3,19 +3,15 @@ import { useTranslation } from 'react-i18next';
 
 //Videos Import
 
-import Video from '../media/videos/video1.mp4';
+//import Video from '../media/videos/video1.mp4';
+import Video2 from '../media/videos/presentacion.mp4';
+
 const videos = [
-  {
-    id: 1,
-    title: 'promoVideos.video1.title',
-    description: 'promoVideos.video1.description',
-    src: Video,
-  },
   {
     id: 2,
     title: 'promoVideos.video2.title',
     description: 'promoVideos.video2.description',
-    src: Video
+    src: Video2
   },
 ];
 
@@ -28,7 +24,7 @@ export const PromoVideos = () => {
         <h2 className="text-3xl font-serif text-primary text-center mb-12">
           {t('promoVideos.title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {videos.map((video) => (
 
             
@@ -37,7 +33,7 @@ export const PromoVideos = () => {
               className="relative group cursor-pointer overflow-hidden rounded-lg"
             >
 
-              <video className="h-56 w-full rounded-lg" muted autoPlay>
+              <video className="h-full w-full rounded-lg" autoPlay>
                 <source src={video.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

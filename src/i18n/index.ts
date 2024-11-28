@@ -37,7 +37,7 @@ const resources = {
       promoVideos: {
         title: 'Discover Our Products',
         video1: {
-          title: 'Summer Collection 2024',
+          title: 'sd',
           description: 'Discover our new summer essentials'
         },
         video2: {
