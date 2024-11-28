@@ -27,10 +27,10 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="max-w-lg mx-auto sm:mx-0"
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-primary text-center sm:text-left mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-slate-50 italic text-center sm:text-left mb-4 ">
               {t('hero.title')}
             </h1>
-            <p className="text-base sm:text-lg text-secondary text-center sm:text-left mb-6 sm:mb-8">
+            <p className="text-base sm:text-lg font-light text-primary text-center sm:text-left mb-6 sm:mb-8 ">
               {t('hero.subtitle')}
             </p>
             <div className="text-center sm:text-left">
